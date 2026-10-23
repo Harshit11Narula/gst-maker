@@ -1,0 +1,535 @@
+/* Shared invoice document pieces */
+.inv-doc {
+  background: #fff;
+  color: #132238;
+}
+
+.inv-number {
+  margin-bottom: 0;
+}
+
+.inv-parties {
+  margin-top: 1.4rem;
+}
+
+.inv-party-label {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.35rem;
+}
+
+.inv-party-name {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.inv-party-meta {
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.inv-items {
+  margin-top: 1.4rem;
+}
+
+.inv-items-dense .data th,
+.inv-items-dense .data td {
+  padding: 0.35rem 0.45rem;
+  font-size: 0.85rem;
+}
+
+.inv-totals {
+  margin-top: 1.2rem;
+  text-align: right;
+  line-height: 1.55;
+}
+
+.inv-grand {
+  font-size: 1.15rem;
+  margin-top: 0.35rem;
+}
+
+.inv-notes {
+  margin-top: 1.2rem;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+
+.inv-meta {
+  text-align: right;
+  font-size: 0.95rem;
+}
+
+.inv-tax-type {
+  color: var(--ink-soft);
+  margin-top: 0.15rem;
+}
+
+.inv-logo-on-dark {
+  background: #fff;
+  padding: 4px;
+}
+
+.inv-logo-sm {
+  width: 48px;
+  height: 48px;
+}
+
+/* Format picker cards */
+.format-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.75rem;
+  margin: 0.75rem 0 1.25rem;
+}
+
+.format-card {
+  appearance: none;
+  text-align: left;
+  cursor: pointer;
+  border: 1.5px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  padding: 0.85rem 0.9rem;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+}
+
+.format-card:hover {
+  border-color: #9bb0c4;
+  transform: translateY(-1px);
+}
+
+.format-card.is-selected {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15);
+}
+
+.format-card-swatch {
+  height: 10px;
+  border-radius: 999px;
+  margin-bottom: 0.55rem;
+}
+
+.format-card strong {
+  display: block;
+  font-size: 0.92rem;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+
+.format-card span {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  line-height: 1.35;
+}
+
+.format-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.format-toolbar label {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.format-toolbar select {
+  min-width: 180px;
+  padding: 0.45rem 0.7rem;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+/* —— Teal Banner —— */
+.inv-format-teal-banner {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.inv-format-teal-banner .inv-banner {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #0f766e 0%, #0d9488 55%, #14b8a6 100%);
+  color: #fff;
+  padding: 1.25rem 1.35rem;
+}
+
+.inv-format-teal-banner .panel-title,
+.inv-format-teal-banner .inv-tax-type,
+.inv-format-teal-banner .inv-meta,
+.inv-format-teal-banner .muted {
+  color: #ecfeff;
+}
+
+.inv-format-teal-banner .inv-banner-kicker {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.85;
+  margin-bottom: 0.2rem;
+}
+
+.inv-format-teal-banner .inv-number-lg {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 0.35rem;
+}
+
+.inv-format-teal-banner .inv-parties,
+.inv-format-teal-banner .inv-items,
+.inv-format-teal-banner .inv-totals,
+.inv-format-teal-banner .inv-notes {
+  padding-left: 1.35rem;
+  padding-right: 1.35rem;
+}
+
+.inv-format-teal-banner .inv-notes {
+  padding-bottom: 1.2rem;
+}
+
+.inv-format-teal-banner .inv-totals {
+  padding-bottom: 1.2rem;
+}
+
+/* —— Formal —— */
+.inv-format-formal {
+  border: 2px solid #1e3a5f;
+  box-shadow: inset 0 0 0 4px #fff, inset 0 0 0 6px #1e3a5f;
+}
+
+.inv-formal-title {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #1e3a5f;
+}
+
+.inv-formal-title .panel-title {
+  letter-spacing: 0.12em;
+  font-size: 1.45rem;
+}
+
+.inv-formal-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #1e3a5f;
+  margin-bottom: 0.25rem;
+}
+
+.inv-formal-meta-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.9rem;
+  align-items: flex-start;
+}
+
+.inv-formal-meta-row .inv-meta {
+  text-align: left;
+}
+
+.inv-formal-gstin {
+  font-size: 0.92rem;
+}
+
+.inv-parties-bordered .inv-party {
+  border: 1px solid #c5d0dc;
+  padding: 0.85rem;
+  border-radius: 4px;
+}
+
+.inv-formal-footer {
+  margin-top: 1.25rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed #c5d0dc;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+/* —— Slate —— */
+.inv-format-slate {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.inv-slate-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: #334155;
+  color: #f8fafc;
+  padding: 1.2rem 1.35rem;
+}
+
+.inv-format-slate .inv-slate-head .panel-title,
+.inv-format-slate .inv-slate-head .inv-number,
+.inv-format-slate .inv-slate-head .inv-meta,
+.inv-format-slate .inv-slate-head .inv-tax-type {
+  color: #f1f5f9;
+}
+
+.inv-format-slate .inv-parties,
+.inv-format-slate .inv-items,
+.inv-format-slate .inv-notes {
+  padding-left: 1.35rem;
+  padding-right: 1.35rem;
+}
+
+.inv-slate-totals {
+  margin: 1rem 1.35rem 1.35rem;
+  background: #f1f5f9;
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+}
+
+.inv-slate-totals .inv-totals {
+  margin-top: 0;
+}
+
+/* —— Boxed —— */
+.inv-box {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  background: #f8fafc;
+}
+
+.inv-totals-box {
+  margin-top: 1rem;
+  background: #ecfdf5;
+  border-color: #99f6e4;
+}
+
+.inv-totals-box .inv-totals {
+  margin-top: 0;
+}
+
+.inv-format-boxed .data thead th {
+  background: #0f766e;
+  color: #fff;
+}
+
+/* —— Emerald —— */
+.inv-format-emerald {
+  border-left: 6px solid #047857;
+  background: linear-gradient(180deg, #f0fdf4 0%, #fff 28%);
+}
+
+.inv-emerald-kicker {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #047857;
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+
+.inv-format-emerald .data thead th {
+  background: #d1fae5;
+  color: #064e3b;
+}
+
+/* —— Compact —— */
+.inv-format-compact {
+  padding: 1rem 1.1rem;
+}
+
+.inv-compact-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.inv-compact-top .panel-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.15rem;
+}
+
+.inv-compact-seller {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+}
+
+.inv-compact-parties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.25rem;
+  font-size: 0.85rem;
+  margin: 0.65rem 0 0.35rem;
+  color: var(--ink-soft);
+}
+
+.inv-format-compact .inv-items {
+  margin-top: 0.5rem;
+}
+
+.inv-format-compact .inv-totals {
+  margin-top: 0.65rem;
+  font-size: 0.92rem;
+}
+
+.inv-format-compact .inv-grand {
+  font-size: 1.05rem;
+}
+
+/* —— Navy Ribbon —— */
+.inv-ribbon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: #1e3a8a;
+  color: #fff;
+  padding: 0.65rem 1rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin: -0.15rem -0.15rem 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.inv-ribbon-totals {
+  margin-top: 1rem;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+}
+
+.inv-ribbon-totals .inv-totals {
+  margin-top: 0;
+}
+
+.inv-format-navy-ribbon .data thead th {
+  background: #1e3a8a;
+  color: #fff;
+}
+
+/* —— Split —— */
+.inv-split-mast {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #0e7490;
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 720px) {
+  .inv-split-mast {
+    grid-template-columns: 1fr;
+  }
+}
+
+.inv-split-left .panel-title {
+  margin-top: 0.5rem;
+}
+
+.inv-split-right {
+  background: #ecfeff;
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+}
+
+.inv-split-right .inv-meta {
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+.inv-split-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #0e7490;
+  font-weight: 700;
+}
+
+.inv-format-split .inv-number-lg {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0.25rem 0;
+}
+
+.inv-format-split .data thead th {
+  background: #0e7490;
+  color: #fff;
+}
+
+/* —— Stamp —— */
+.inv-stamp-head {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.inv-stamp-badge {
+  margin-top: 0.45rem;
+  display: inline-block;
+  border: 2px solid #9a3412;
+  color: #9a3412;
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px;
+  transform: rotate(-3deg);
+}
+
+.inv-stamp-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1.35rem;
+  margin-top: 0.85rem;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.inv-format-stamp .data thead th {
+  background: #fff7ed;
+  color: #9a3412;
+}
+
+@media print {
+  .inv-format-teal-banner,
+  .inv-format-slate,
+  .inv-format-formal,
+  .inv-format-emerald,
+  .inv-format-navy-ribbon,
+  .inv-format-boxed,
+  .inv-format-compact,
+  .inv-format-classic,
+  .inv-format-split,
+  .inv-format-stamp {
+    box-shadow: none !important;
+  }
+}
